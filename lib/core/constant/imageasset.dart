@@ -1,6 +1,6 @@
 // This file contain all images URLs
 
-class ImageAsset {
+class AppImageAsset {
   static const String imagesRootPath = 'assets/images';
 
   static const String onBoaringImageone = "$imagesRootPath/onboardingone.PNG";
