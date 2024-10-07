@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:moolat/controller/onboardingcontroller.dart';
 
 import 'Package:moolat/core/constant/color.dart';
 
-class OnBoardingCustomButton extends StatelessWidget {
+class OnBoardingCustomButton extends GetView<OnBoardingControllerAction> {
   const OnBoardingCustomButton({super.key});
 
   @override
@@ -18,6 +20,7 @@ class OnBoardingCustomButton extends StatelessWidget {
         textColor: Colors.white,
         onPressed: () {
           // Navigate to the next screen onboarding
+          controller.next();
         },
         color: AppColor.primaryColor,
         shape: RoundedRectangleBorder(

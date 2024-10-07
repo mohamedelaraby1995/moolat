@@ -1,16 +1,24 @@
 ///  Customer pageviewer for the onboarding screen.
 /// */
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:moolat/controller/onboardingcontroller.dart';
 import 'package:moolat/data/datasource/static/static.dart';
 
 import 'Package:moolat/core/constant/color.dart';
 
-class OnBoardingCustomSlider extends StatelessWidget {
+class OnBoardingCustomSlider extends GetView<OnBoardingControllerAction> {
   const OnBoardingCustomSlider({super.key});
 
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
+      //Add controller
+      controller: controller.pageController,
+      onPageChanged: (val) {
+        //Link the value with the controller
+        controller.onPageChanged(val);
+      },
       itemCount: onBoardingList.length,
       itemBuilder: (context, i) => Column(
         children: [
