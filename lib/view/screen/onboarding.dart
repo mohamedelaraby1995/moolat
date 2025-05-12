@@ -13,9 +13,14 @@ class OnBoarding extends StatelessWidget {
           itemBuilder:
               (context, i) => Column(
                 children: [
-                  Text(onBoardingList[i].title!),
+                  Text(
+                    onBoardingList[i].title!,
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 80),
                   Image.asset(onBoardingList[i].image!),
                   Text(onBoardingList[i].body!),
+                  Container(width: double.infinity),
                 ],
               ),
         ),
