@@ -1,4 +1,4 @@
-class ImageAsset {
+class AppImageAsset {
   static const String routeAssetImage = "assets/images";
 
   static const String onBoardingImageOne = "$routeAssetImage/onboardingone.PNG";

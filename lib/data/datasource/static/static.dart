@@ -6,24 +6,24 @@ List<OnBoardingModel> onBoardingList = [
     title: 'Choose Product',
     body:
         ' We have a 100K Product, Choose \n your product From our  E-commerce Shop',
-    image: ImageAsset.onBoardingImageOne,
+    image: AppImageAsset.onBoardingImageOne,
   ),
   OnBoardingModel(
     title: 'Easy and safe Payment',
     body:
         ' We have a 100K Product, Choose \n your product From our  E-commerce Shop',
-    image: ImageAsset.onBoardingImageTwo,
+    image: AppImageAsset.onBoardingImageTwo,
   ),
   OnBoardingModel(
     title: 'Track your order',
     body:
         ' We have a 100K Product, Choose \n your product From our  E-commerce Shop',
-    image: ImageAsset.onBoardingImageThree,
+    image: AppImageAsset.onBoardingImageThree,
   ),
   OnBoardingModel(
     title: 'fast delivery',
     body:
         ' We have a 100K Product, Choose \n your product From our  E-commerce Shop',
-    image: ImageAsset.onBoardingImageFour,
+    image: AppImageAsset.onBoardingImageFour,
   ),
 ];
